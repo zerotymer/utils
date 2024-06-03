@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Todos from '../components/Todos';
 import { changeInput, insert, toggle, remove } from '../modules/todos';
@@ -31,4 +31,4 @@ const TodosContainer = () => {
     );
 };
 
-export default TodosContainer;
+export default React.memo(TodosContainer);
